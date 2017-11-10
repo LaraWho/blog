@@ -73,6 +73,22 @@ h3 {
   }
 }
 
+.twitter-timeline {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 765px) {
+  .twitter-timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
 .post>h4 {
   margin-top: 10px;
   font-family: 'Julius Sans One', sans-serif;
@@ -87,30 +103,22 @@ h3 {
 
 .thumbnail {
   padding: 0;
+
+}
+  
+
+.row {
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .block {
-  margin: 50px 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/*.twitter-timeline {
-  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
   flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: flex-start;
-}*/
-
-/*@media only screen and (max-width: 765px) {
-  .twitter-timeline {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-}*/
+}
 
 nav {
   font-family: 'Julius Sans One', sans-serif;
